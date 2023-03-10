@@ -16,6 +16,11 @@ const Home = () => {
     <View style={style.container}>
       <TouchableOpacity
         style={style.btn}
+        onPress={() => navigation.navigate('Download')}>
+        <Text style={style.text}>Download Video</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={style.btn}
         onPress={() => navigation.navigate('Video')}>
         <Text style={style.text}>Video Call</Text>
       </TouchableOpacity>
